@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root alignment="CENTER" prefHeight="50.0" prefWidth="220.0" type="HBox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox fx:id="dayCombo" maxWidth="1.7976931348623157E308">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </ComboBox>
+      <ComboBox fx:id="monthCombo" maxWidth="1.7976931348623157E308">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </ComboBox>
+      <ComboBox fx:id="yearCombo" editable="true" maxWidth="1.7976931348623157E308">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </ComboBox>
+   </children>
+</fx:root>

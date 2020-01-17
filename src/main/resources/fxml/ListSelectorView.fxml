@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root hgap="5.0" prefHeight="200.0" prefWidth="320.0" type="GridPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Label fx:id="leftLabel" text="Label" />
+      <Label fx:id="rightLabel" text="Label" GridPane.columnIndex="2" />
+      <ListView fx:id="leftList" GridPane.rowIndex="1" />
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="moveToRightButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#moveToRightAction" text="&gt;" />
+            <Button fx:id="moveAllToRightButton" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#moveAllToRightAction" text="&gt;&gt;" />
+            <Button fx:id="moveAllToLeftButton" layoutX="10.0" layoutY="35.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#moveToLeftAction" text="&lt;&lt;" />
+            <Button fx:id="moveToLeftButton" layoutX="10.0" layoutY="60.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#moveAllToLeftAction" text="&lt;" />
+         </children>
+      </VBox>
+      <ListView fx:id="rightList" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</fx:root>
