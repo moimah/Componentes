@@ -2,24 +2,30 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<fx:root alignment="CENTER" prefHeight="50.0" prefWidth="220.0" type="HBox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="300.0" type="HBox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ComboBox fx:id="dayCombo" maxWidth="1.7976931348623157E308">
-         <HBox.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </HBox.margin>
-      </ComboBox>
-      <ComboBox fx:id="monthCombo" maxWidth="1.7976931348623157E308">
-         <HBox.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </HBox.margin>
-      </ComboBox>
-      <ComboBox fx:id="yearCombo" editable="true" maxWidth="1.7976931348623157E308">
-         <HBox.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </HBox.margin>
-      </ComboBox>
+      <GridPane hgap="5.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="45.0" prefWidth="265.0" vgap="5.0" HBox.hgrow="NEVER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="85.0" minWidth="10.0" prefWidth="85.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="35.0" prefWidth="145.0" />
+            <ColumnConstraints fillWidth="false" hgrow="NEVER" maxWidth="-Infinity" minWidth="10.0" prefWidth="105.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ComboBox fx:id="dayCombo" maxWidth="85.0" prefWidth="85.0" GridPane.hgrow="NEVER" />
+            <ComboBox fx:id="monthCombo" maxWidth="145.0" prefWidth="145.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" />
+            <ComboBox fx:id="yearCombo" editable="true" prefHeight="25.0" prefWidth="112.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </GridPane>
    </children>
 </fx:root>
