@@ -138,7 +138,16 @@ public class DateChooser extends HBox implements Initializable {
 			int day = dateProperty.get().getDayOfMonth();
 			int year = dateProperty.get().getYear();
 			
-			getYearCombo().getSelectionModel().select(year+"");
+			if(year<0) {
+								
+				 year = Calendar.getInstance().get(Calendar.YEAR);
+				 getYearCombo().getSelectionModel().select(year+"");
+				 
+			}else {
+				
+				getYearCombo().getSelectionModel().select(year+"");
+			}
+			
 			getMonthCombo().getSelectionModel().select(month-1);
 			getDayCombo().getSelectionModel().select(day-1);
 
