@@ -5,6 +5,6 @@
 
 <fx:root fx:id="view" type="HBox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextField fx:id="txtNumber" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+      <TextField fx:id="txtNumber" HBox.hgrow="ALWAYS" />
    </children>
 </fx:root>
