@@ -7,6 +7,10 @@
 #diasemana{
 	-fx-font-weight: bold;
 }
+
+#domingo{	
+	-fx-text-fill: red;
+}
 #festivo{
 	-fx-font-weight: bold;
 	-fx-text-fill: red;
@@ -14,10 +18,11 @@
 #dia{
 	-fx-font-style: italic; 
 }
-#domingo{
+#diaDomigo{
 	-fx-font-style: italic; 
-	-fx-text-fill: red;
+	-fx-text-fill: red
 }
+
 #hoy{
 	-fx-background-color: linear-gradient(to bottom right, white 0%, orange 100%);
 	-fx-border-radius: 10px;

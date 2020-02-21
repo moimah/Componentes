@@ -21,10 +21,7 @@ import javafx.scene.layout.VBox;
 
 public class MonthCalendar extends VBox implements Initializable {
 
-	// Model
-	private IntegerProperty year = new SimpleIntegerProperty();
-	private IntegerProperty month = new SimpleIntegerProperty();
-	private ListProperty<Label> listLbl = new SimpleListProperty<Label>();
+	
 
 	@FXML
 	private VBox view;
@@ -157,6 +154,12 @@ public class MonthCalendar extends VBox implements Initializable {
 
 	@FXML
 	private Label lbl42;
+	
+	// Model
+	private IntegerProperty year = new SimpleIntegerProperty();
+	private IntegerProperty month = new SimpleIntegerProperty();
+	private IntegerProperty today = new SimpleIntegerProperty();
+	private ListProperty<Label> listLbl = new SimpleListProperty<Label>();
 
 	// Others
 	private int desface = 1;
@@ -234,6 +237,7 @@ public class MonthCalendar extends VBox implements Initializable {
 		int monthNDays = YearMonth.of(year.getValue(), month.getValue()).lengthOfMonth();
 		int startDay = localDate.getDayOfWeek().getValue() - desface;
 
+		
 		clean();
 
 		for (int i = startDay, j = 1; j < monthNDays + 1; i++, j++) {
