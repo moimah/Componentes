@@ -1,6 +1,8 @@
+
 #mes{
 	-fx-font-weight: bold;
 	-fx-font-size: 13pt;
+	-fx-font-family:Courier New;
 }
 #diasemana{
 	-fx-font-weight: bold;
