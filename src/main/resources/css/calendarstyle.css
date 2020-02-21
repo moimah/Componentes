@@ -1,0 +1,27 @@
+#mes{
+	-fx-font-weight: bold;
+	-fx-font-size: 13pt;
+}
+#diasemana{
+	-fx-font-weight: bold;
+}
+#festivo{
+	-fx-font-weight: bold;
+	-fx-text-fill: red;
+}
+#dia{
+	-fx-font-style: italic; 
+}
+#domingo{
+	-fx-font-style: italic; 
+	-fx-text-fill: red;
+}
+#hoy{
+	-fx-background-color: linear-gradient(to bottom right, white 0%, orange 100%);
+	-fx-border-radius: 10px;
+	-fx-border-style: dashed;
+	-fx-background-radius: 10px;
+	-fx-font-weight: bold;
+	-fx-font-style: normal;
+	-fx-text-fill: black;
+}
